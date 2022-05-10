@@ -22,10 +22,11 @@ func main() {
 		line, err := term.ReadLine()
 
 		if err == io.EOF {
-			fmt.Println()
+			fmt.Println("bye bye~~")
 			return
 		}
 		if err != nil {
+			panic(err)
 			return
 		}
 
